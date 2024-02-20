@@ -13,7 +13,7 @@ const generateTokenAndSetCookie = (userId, res) => {
             secure: process.env.NODE_ENV !== "development",
         });
 
-        console.log("Token generated and set successfully:", token);
+        
     } catch (error) {
         console.log("Error generating token:", error.message);
     }
