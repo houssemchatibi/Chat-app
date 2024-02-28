@@ -16,7 +16,7 @@ const Login = () => {
 				<form >
 					<div>
 						<label className='label p-2'>
-							<span className='text-base label-text'>Username</span>
+							<span className='text-base label-text text-white'>Username</span>
 						</label>
 						<input
 							type='text'
@@ -28,7 +28,7 @@ const Login = () => {
 
 					<div>
 						<label className='label'>
-							<span className='text-base label-text'>Password</span>
+							<span className='text-base label-text text-white'>Password</span>
 						</label>
 						<input
 							type='password'
@@ -37,12 +37,12 @@ const Login = () => {
 							
 						/>
 					</div>
-					<Link to='#' className='text-sm  hover:underline hover:text-blue-600 mt-2 inline-block'>
+					<Link to='/signup' className='text-sm text-blue-600 hover:underline hover:mt-2 inline-block'>
 						{"Don't"} have an account?
 					</Link>
                     <div>
-						<button className='btn btn-block btn-sm mt-2' disabled={loading}>
-							{loading ? <span className='loading loading-spinner '></span> : "Login"}
+						<button className='btn btn-block btn-sm mt-2 bg-gray-400' >
+							Login
 						</button>
 					</div>
 
