@@ -6,6 +6,7 @@ const useGetConversations = () => {
 	const [conversations, setConversations] = useState([]);
 
 	useEffect(() => {
+		
 		const getConversations = async () => {
 			setLoading(true);
 			try {
@@ -24,7 +25,7 @@ const useGetConversations = () => {
 
 		getConversations();
 	}, []);
-
-	return { loading, conversations };
+	
+	return { loading, conversations};
 };
 export default useGetConversations;
